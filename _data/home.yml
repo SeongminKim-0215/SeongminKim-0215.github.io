@@ -5,7 +5,7 @@ navbar_entries:
   #- title: Selected Publications
   #  url: blog
 
-  - title: Seongmin Kim_CV
+  - title: Seongmin Kim_CV.pdf
     url: "https://www.dropbox.com/scl/fi/tda7j6gk1k3j8142js07y/Seongmin-Kim_CV_2025Nov.pdf?rlkey=6jr3200fatsc1sg7vp2yzbxmt&st=ss5jqfvw&dl=0"
 
 misc_entries:
@@ -25,11 +25,11 @@ misc_entries2:
 
 
 footer_entries:
-  - title: (for up-to-date publications)<br>google scholar
+  - title: Google scholar (for up-to-date publications)
     url: https://scholar.google.com/citations?user=HXcbuWQAAAAJ
 
-  - title: github
+  - title: <br>github
     url: https://github.com/SeongminKim-0215
 
-  - title: MICC group homepage
+  - title: <br><br>MICC group homepage
     url: https://micc.snu.ac.kr/
