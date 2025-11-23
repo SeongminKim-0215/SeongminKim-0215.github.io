@@ -1,8 +1,8 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: publication
+  - title: Publications
     url: blog
 
 education_entries:
