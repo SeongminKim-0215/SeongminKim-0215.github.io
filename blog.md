@@ -1,4 +1,5 @@
 ---
 layout: blog
-title: "Publications"
+title: "Selected Publications"
+permalink: /blog/
 ---
