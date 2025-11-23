@@ -8,6 +8,14 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
+Education:
+  - title: Ph.D.
+    desc: KAIST (2021-2025)
+  - title: M.S.
+    desc: SNU (2018-2020)
+  - title: B.S.
+    desc: POSTECH (2012-2018)
+
 project_entries:
   - title: Project 1
     url: overview-post
