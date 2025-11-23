@@ -21,6 +21,17 @@ education_entries:
     desc: 2012–2018
     url: ""
 
+entries:
+  - title: "Education"
+    url: false
+    entries:
+      - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
+        url: false
+      - title: "2018–2020: M.S. in Chemical and Biological Engineering, Seoul National University (Advisor: Prof. Kyu Tae Lee)"
+        url: false
+      - title: "2012–2018: B.S. in Chemical Engineering, POSTECH"
+        url: false
+
 project_entries:
   - title: Project 1
     url: overview-post
