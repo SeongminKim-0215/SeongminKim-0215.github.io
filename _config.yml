@@ -1,8 +1,9 @@
-title: Moonwalk
-author: Abhinav Saxena
+title: Welcome Seongmin's Web site!
+author: Seongmin Kim
 url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
+  Hi, I’m Seongmin Kim. I’m currently a postdoctoral researcher in Chemical and Biological Engineering at Seoul National University, where I work on AI-driven approaches for inorganic materials synthesis and synthesis planning. I earned my Ph.D. in Chemical and Biomolecular Engineering from KAIST (2021–2025), after completing my M.S. in Chemical and Biological Engineering at Seoul National University (2018–2020) and my B.S. in Chemical Engineering at POSTECH (2012–2018).
+My research focuses on developing machine-learning and large-language-model–based tools that help design synthesizable materials and translate predictions into practical experimental routes.
 
 permalink: /:slug
 
