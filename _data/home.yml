@@ -8,43 +8,13 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
-entries:
-  - title: "Education"
+education_entries:
+  - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
     url: false
-    entries:
-      - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
-        url: false
-      - title: "2018–2020: M.S. in Chemical and Biological Engineering, Seoul National University (Advisor: Prof. Kyu Tae Lee)"
-        url: false
-      - title: "2012–2018: B.S. in Chemical Engineering, POSTECH"
-        url: false
-
-project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
-
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  - title: "2018–2020: M.S. in Chemical and Biological Engineering, Seoul National University (Advisor: Prof. Kyu Tae Lee)"
+    url: false
+  - title: "2012–2018: B.S. in Chemical Engineering, POSTECH"
+    url: false
 
 old_project_entries:
   - title: Soopr
