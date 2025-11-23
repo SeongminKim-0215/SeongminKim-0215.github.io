@@ -8,14 +8,6 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
-Education:
-  - title: Ph.D.
-    desc: KAIST (2021-2025)
-  - title: M.S.
-    desc: SNU (2018-2020)
-  - title: B.S.
-    desc: POSTECH (2012-2018)
-
 project_entries:
   - title: Project 1
     url: overview-post
@@ -70,37 +62,5 @@ footer_entries:
 
   - title: MICC group homepage
     url: https://micc.snu.ac.kr/
-
-misc_entries:
-  - title: this is an example vertical list
-    url: false
-
-  - title: you can show or hide using a boolean flag in _config.yml
-    url: false
-
-  - title: and you can add data in _data/home.yml
-    url: false
-
-  - title: Blog posts
-    post_list: true
-    url: false
-
-  - title: moonwalk on the Internet
-    url: false
-    entries:
-      - title: on Github
-        url: https://github.com/abhinavs/moonwalk
-
-      - title: originally built for abhinav's homepage
-        url: https://www.abhinav.co
-
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
 
 
