@@ -4,4 +4,4 @@ layout: post
 ---
 
 **Author:** H. Kim†, G. Choi†, S. Kim†, D. Lee, S. Doo, J. Park, W. Lee*, K. Lee*  
-**DOI:** 10.1021/acs.jpclett.0c01829 [10.1021/acs.jpclett.0c01829](https://pubs.acs.org/doi/10.1021/acs.jpclett.0c01829)
+**DOI:** [10.1021/acs.jpclett.0c01829](https://pubs.acs.org/doi/10.1021/acs.jpclett.0c01829)
