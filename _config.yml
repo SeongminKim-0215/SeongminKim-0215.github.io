@@ -17,7 +17,7 @@ theme_config:
   appearance: "dark"
   appearance_toggle: true
   back_home_text: "home.."
-  date_format: "%Y-%m-%d"
+  date_format: "%Y-%m"
   show_description: true
   show_navbar: true
   show_footer: true
