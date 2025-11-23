@@ -9,9 +9,9 @@ navbar_entries:
     url: "https://www.dropbox.com/scl/fi/tda7j6gk1k3j8142js07y/Seongmin-Kim_CV_2025Nov.pdf?rlkey=6jr3200fatsc1sg7vp2yzbxmt&st=ss5jqfvw&dl=0"
 
 misc_entries:
-  - title: "2021–2025:&nbsp;&nbsp;Ph.D. in Chemical and Biomolecular Engineering, KAIST<br>(Advisor: Prof. Yousung Jung)"
+  - title: "2021–2025:&nbsp;&nbsp;Ph.D. in Chemical and Biomolecular Engineering, KAIST<br>&nbsp;&nbsp;&nbsp;&nbsp;(Advisor: Prof. Yousung Jung)"
     url: false
-  - title: "2018–2020:&nbsp;&nbsp;M.S. in Chemical and Biological Engineering, Seoul National University<br>(Advisor: Prof. Kyu Tae Lee)"
+  - title: "2018–2020:&nbsp;&nbsp;M.S. in Chemical and Biological Engineering, Seoul National University<br>&nbsp;&nbsp;&nbsp;&nbsp;(Advisor: Prof. Kyu Tae Lee)"
     url: false
   - title: "2012–2018:&nbsp;&nbsp;B.S. in Chemical Engineering, POSTECH"
     url: false
