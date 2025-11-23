@@ -2,8 +2,8 @@ navbar_entries:
   - title: About
     url: about
 
-  - title: Selected Publications
-    url: blog
+  #- title: Selected Publications
+  #  url: blog
 
   - title: CV
     url: "https://www.dropbox.com/scl/fi/tda7j6gk1k3j8142js07y/Seongmin-Kim_CV_2025Nov.pdf?rlkey=6jr3200fatsc1sg7vp2yzbxmt&st=ss5jqfvw&dl=0"
