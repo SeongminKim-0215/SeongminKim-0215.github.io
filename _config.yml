@@ -27,10 +27,12 @@ theme_config:
   show_blog: true
   show_old_projects: false
   show_misc_list: true
+  show_misc_list2: true
 
   home:
     title_blog: Publications
-    title_misc_list: Education   # ← 여기서 Education 섹션 제목 지정
+    title_misc_list: Research Experience
+    title_misc_list2: Education
 
 
 
