@@ -4,19 +4,17 @@ navbar_entries:
 
   - title: Publications
     url: blog
+
   - title: CV
     url: "https://github.com/SeongminKim-0215/SeongminKim-0215.github.io/blob/master/Seongmin%20Kim_CV_2025Nov.pdf"
 
 entries:
-  - title: "Education"
+  - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
     url: false
-    entries:
-      - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
-        url: false
-      - title: "2018–2020: M.S. in Chemical and Biological Engineering, Seoul National University (Advisor: Prof. Kyu Tae Lee)"
-        url: false
-      - title: "2012–2018: B.S. in Chemical Engineering, POSTECH"
-        url: false
+  - title: "2018–2020: M.S. in Chemical and Biological Engineering, Seoul National University (Advisor: Prof. Kyu Tae Lee)"
+    url: false
+  - title: "2012–2018: B.S. in Chemical Engineering, POSTECH"
+    url: false
 
 old_project_entries:
   - title: Soopr
@@ -45,5 +43,3 @@ footer_entries:
 
   - title: MICC group homepage
     url: https://micc.snu.ac.kr/
-
-
