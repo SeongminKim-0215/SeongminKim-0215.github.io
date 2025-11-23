@@ -1,7 +1,7 @@
 ---
-title: "Plane-selective Coating of Li₂SnO₃ on Li[NixCo1-x]O₂ for High Power Li-ion Batteries"
+title: "One-Step β-Li2SnO3 Coating on High-nickel Layered Oxides via Thermal Phase Segregation for Li-ion Batteries"
 layout: post
 ---
 
-**Author:** H. Kim†, G. Choi†, S. Kim†, D. Lee, S. Doo, J. Park, W. Lee*, K. Lee*  
-**DOI:** [10.1021/acs.jpclett.0c01829](https://pubs.acs.org/doi/10.1021/acs.jpclett.0c01829)
+**Author:** S. Kim†, H. Kim†, S. Doo, H. Jeon, I. Kim, H. Kim, Y. Kim*
+**DOI:** [10.33961/jecst.2023.00143](https://www.jecst.org/m/journal/view.php?number=485)
