@@ -8,19 +8,6 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
-education_entries:
-  - title: Ph.D. in Chemical and Biomolecular Engineering, KAIST
-    desc: 2021–2025 (Advisor: Prof. Yousung Jung)
-    url: ""   # 링크 필요 없으면 빈 문자열로 둬도 됨
-
-  - title: M.S. in Chemical and Biological Engineering, Seoul National University
-    desc: 2018–2020 (Advisor: Prof. Kyu Tae Lee)
-    url: ""
-
-  - title: B.S. in Chemical Engineering, POSTECH
-    desc: 2012–2018
-    url: ""
-
 entries:
   - title: "Education"
     url: false
