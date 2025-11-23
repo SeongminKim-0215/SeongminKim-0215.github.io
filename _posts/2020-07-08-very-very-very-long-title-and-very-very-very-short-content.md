@@ -1,5 +1,7 @@
 ---
+title: "Predicting Synthesis Recipes of Inorganic Crystal Materials using Elementwise Template Formulation"
 layout: post
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.
+**Author:** S. Kim, J. Noh, G. Gu, S. Chen, Y. Jung*  
+**DOI:** [10.1039/D3SC03538G](https://pubs.rsc.org/en/content/articlelanding/2024/sc/d3sc03538g)
