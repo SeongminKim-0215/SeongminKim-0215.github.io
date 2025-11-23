@@ -2,11 +2,8 @@ navbar_entries:
   - title: about
     url: about
 
-  - title: blog
+  - title: publication
     url: blog
-
-  - title: website
-    url: https://www.abhinav.co
 
 education_entries:
   - title: "2021–2025: Ph.D. in Chemical and Biomolecular Engineering, KAIST (Advisor: Prof. Yousung Jung)"
