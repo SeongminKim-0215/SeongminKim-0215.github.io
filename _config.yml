@@ -30,6 +30,8 @@ theme_config:
 
   home:
     title_blog: Publications
+    title_misc_list: Education   # ← 여기서 Education 섹션 제목 지정
+
 
 
 soopr:
