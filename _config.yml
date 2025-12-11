@@ -30,7 +30,7 @@ theme_config:
   show_misc_list2: true
 
   home:
-    title_blog: Selected Publications
+    title_blog: Selected Publications (1st & co-1st)
     title_misc_list: Research Experiences
     title_misc_list2: Educations
     title_footer: Related Sites
