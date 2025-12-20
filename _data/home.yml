@@ -1,101 +1,35 @@
 navbar_entries:
-  - title: about
-    url: about
+  #- title: About
+  #  url: about
 
-  - title: blog
-    url: blog
+  #- title: Selected Publications
+  #  url: blog
 
-  - title: website
-    url: https://www.abhinav.co
-
-project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
-
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
-
-old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
-
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
-
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
-
-footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
-
-  - title: twitter
-    url: https://twitter.com/abhinav
-
-  - title: github
-    url: https://github.com/abhinavs
-
-  - title: feed
-    url: feed.xml
+  - title: Seongmin Kim_CV.pdf
+    url: "https://www.dropbox.com/scl/fi/tda7j6gk1k3j8142js07y/Seongmin-Kim_CV_2025Nov.pdf?rlkey=6jr3200fatsc1sg7vp2yzbxmt&st=ss5jqfvw&dl=0"
 
 misc_entries:
-  - title: this is an example vertical list
+  - title: "Mar 2025 – Present:&nbsp;&nbsp;Postdoctoral Research, Seoul National University<br>&nbsp;&nbsp;&nbsp;&nbsp;(Advisor: Prof. Yousung Jung)"
+    url: false
+  - title: "Nov 2025 – Dec 2025:&nbsp;&nbsp;Visiting Research, University of Toronto<br>&nbsp;&nbsp;&nbsp;&nbsp;(Host: Prof. Alán Aspuru-Guzik)"
     url: false
 
-  - title: you can show or hide using a boolean flag in _config.yml
+misc_entries2:
+  - title: "2021–2025:&nbsp;&nbsp;Ph.D. in Chemical and Biomolecular Engineering, KAIST<br>&nbsp;&nbsp;&nbsp;&nbsp;(Advisor: Prof. Yousung Jung)"
+    url: false
+  - title: "2018–2020:&nbsp;&nbsp;M.S. in Chemical and Biological Engineering, Seoul National University<br>&nbsp;&nbsp;&nbsp;&nbsp;(Advisor: Prof. Kyu Tae Lee)"
+    url: false
+  - title: "2012–2018:&nbsp;&nbsp;B.S. in Chemical Engineering, POSTECH"
     url: false
 
-  - title: and you can add data in _data/home.yml
-    url: false
-
-  - title: Blog posts
-    post_list: true
-    url: false
-
-  - title: moonwalk on the Internet
-    url: false
-    entries:
-      - title: on Github
-        url: https://github.com/abhinavs/moonwalk
-
-      - title: originally built for abhinav's homepage
-        url: https://www.abhinav.co
-
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
 
 
+footer_entries:
+  - title: Google scholar
+    url: https://scholar.google.com/citations?user=HXcbuWQAAAAJ
+
+  - title: Personal github
+    url: https://github.com/SeongminKim-0215
+
+  - title: MICC group homepage
+    url: https://micc.snu.ac.kr/
