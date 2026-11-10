@@ -79,7 +79,7 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
         decoding="async"
         alt="Animation of four specialist agents taking turns in a multi-agent debate, with a judge agent receiving the outcome."
       >
-      <figcaption>Multi-agent debate, the core of thinking mode.</figcaption>
+      <figcaption>Specialist agents debate the synthesis route, and a judge agent makes the call.</figcaption>
     </figure>
     <div class="feature-split-text">
       <h3>Multi-agent debate</h3>
