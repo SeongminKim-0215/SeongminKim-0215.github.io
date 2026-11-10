@@ -79,7 +79,7 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
         decoding="async"
         alt="Animation of four specialist agents taking turns in a multi-agent debate, with a judge agent receiving the outcome."
       >
-      <figcaption>Four specialist agents argue it out; a judge agent decides.</figcaption>
+      <figcaption>Four specialist agents argue it out; a judge agent finalizes the route.</figcaption>
     </figure>
     <div class="feature-split-text">
       <h3>Multi-agent debate</h3>
