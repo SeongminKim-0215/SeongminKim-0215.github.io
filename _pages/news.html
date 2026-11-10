@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /news/
+sitemap: false
+---
+
+{%- comment -%}
+  The about layout (from the theme gem) hard-codes its "News" heading link to
+  /news/. News now lives on the Highlights page, so this page only forwards there,
+  which also keeps any old /news/ links working.
+{%- endcomment -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Highlights | {{ site.first_name }} {{ site.last_name }}</title>
+    <link rel="canonical" href="{{ '/highlights/' | absolute_url }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ '/highlights/' | relative_url }}">
+    <script>
+      location.replace("{{ '/highlights/' | relative_url }}" + location.hash);
+    </script>
+  </head>
+  <body>
+    <p><a href="{{ '/highlights/' | relative_url }}">Continue to Highlights</a></p>
+  </body>
+</html>

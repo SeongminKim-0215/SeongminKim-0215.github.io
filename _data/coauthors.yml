@@ -1,0 +1,6 @@
+# Map a coauthor surname to their homepage so jekyll-scholar links their name in the
+# bibliography. Example:
+#
+# "vlachos":
+#   - firstname: ["Dionisios", "D.", "D. G."]
+#     url: https://cbi.udel.edu/

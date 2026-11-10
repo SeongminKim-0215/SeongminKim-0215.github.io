@@ -1,0 +1,37 @@
+# Journal abbreviations used as `abbr` in _bibliography/papers.bib.
+# `url` links the badge; add a `color` (hex) to override the default badge color.
+"Nat. Rev. Methods Primers":
+  url: https://www.nature.com/nrmp/
+
+"Chem. Rev.":
+  url: https://pubs.acs.org/journal/chreay
+
+"Adv. Intell. Syst.":
+  url: https://advanced.onlinelibrary.wiley.com/journal/26404567
+
+"J. Chem. Inf. Model.":
+  url: https://pubs.acs.org/journal/jcisd8
+
+"Digital Discovery":
+  url: https://pubs.rsc.org/en/journals/journalissues/dd
+
+"JACS":
+  url: https://pubs.acs.org/journal/jacsat
+
+"Angew. Chem. Int. Ed.":
+  url: https://onlinelibrary.wiley.com/journal/15213773
+
+"Chem. Sci.":
+  url: https://pubs.rsc.org/en/journals/journalissues/sc
+
+"Acc. Chem. Res.":
+  url: https://pubs.acs.org/journal/achre4
+
+"J. Electrochem. Sci. Technol.":
+  url: https://www.jecst.org/
+
+"J. Mater. Chem. A":
+  url: https://pubs.rsc.org/en/journals/journalissues/ta
+
+"J. Phys. Chem. Lett.":
+  url: https://pubs.acs.org/journal/jpclcd

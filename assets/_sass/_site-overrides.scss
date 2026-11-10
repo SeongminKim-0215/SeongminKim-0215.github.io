@@ -1,0 +1,961 @@
+// Site-local overrides for Seongmin Kim's site.
+// Loaded last from assets/css/main.scss so these rules win over the theme partials.
+
+// -----------------------------------------------------------------------------
+// Accent colour
+// -----------------------------------------------------------------------------
+// The theme ships a magenta accent ($purple-color). Override the custom
+// properties rather than shadowing _themes.scss, so only the colour changes.
+// Swap the two hex values below to re-theme the whole site.
+
+:root {
+  --global-theme-color: #0f766e; // deep teal
+  --global-hover-color: #115e59; // darker teal, for hover states
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea,
+.navbar,
+.post-title,
+.desc {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.profile img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+// -----------------------------------------------------------------------------
+// Capitalised labels
+// -----------------------------------------------------------------------------
+// Page titles are capitalised in their front matter. Two labels are hard-coded
+// in lower case by the theme: the "news" heading in the about layout and the
+// search hint in the navbar. Capitalise them here rather than shadowing the
+// layout and header includes.
+
+.post article > .clearfix + h2,
+#search-toggle .nav-link {
+  text-transform: capitalize;
+}
+
+// -----------------------------------------------------------------------------
+// Social icon row
+// -----------------------------------------------------------------------------
+// The theme sets the icons inline, separated by literal space characters, so the
+// distance between any two of them is one space plus whatever side bearings the
+// two glyphs happen to carry. Font Awesome and Academicons do not agree on those,
+// which is why Scholar sits tighter against ORCID than GitHub does against the
+// envelope. Lay the row out as flex instead: one `gap` sets every distance, so
+// the spacing stops depending on seven separate glyph metrics.
+
+// The theme stacks this row directly under the News table with no gap.
+.social {
+  margin-top: 3.5rem;
+}
+
+.social .contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  // The theme draws these at 4rem (64px); half that reads as a link row rather
+  // than a banner.
+  font-size: 2rem;
+
+  a {
+    font-size: inherit;
+
+    display: inline-flex;
+    align-items: center;
+
+    i {
+      line-height: 1;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Publication authorship filter
+// -----------------------------------------------------------------------------
+
+.pub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0.5rem;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 2rem;
+    background: none;
+    color: var(--global-text-color);
+    font-size: 0.82rem;
+    line-height: 1.2;
+    cursor: pointer;
+    transition:
+      border-color 0.15s ease,
+      color 0.15s ease,
+      background-color 0.15s ease;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+    }
+
+    &.is-active {
+      border-color: var(--global-theme-color);
+      background-color: var(--global-theme-color);
+      color: #fff; // explicit, so the label keeps contrast on the teal fill
+    }
+  }
+
+  .pub-filter-count {
+    font-size: 0.72rem;
+    opacity: 0.7;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Publication numbering
+// -----------------------------------------------------------------------------
+// Entries carry a number rather than a venue badge: the journal is already
+// named in italics under the authors, so the badge repeated it in a heavy pill,
+// and 26 of those read louder than the titles. pubfilter.js updates each native
+// list item's value and recounts it per filter.
+
+.publications ol.bibliography {
+  padding-left: 2.75rem;
+  list-style: decimal;
+}
+
+.publications ol.bibliography > li {
+  padding-left: 0.5rem;
+}
+
+.publications ol.bibliography > li::marker {
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--global-text-color-light);
+}
+
+// The theme draws the year headings at 10% black, which all but disappears.
+.publications h2.bibliography {
+  color: #6b6b6b;
+}
+
+// The "Under review & in preparation" heading sits outside `.publications`, so
+// it inherits none of that block's spacing. The theme leaves it flush against
+// the last published entry above it and then strands it a good 5rem above the
+// year rule below, so it reads as a footnote to the published list rather than
+// as the start of a new one. Put the gap on the side where the break actually
+// is, and pull the block underneath back up under the heading.
+
+#under-review {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+#under-review + .publications {
+  margin-top: 0;
+
+  h2.bibliography:first-child {
+    margin-top: 0.75rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// About page profile photo
+// -----------------------------------------------------------------------------
+// The about layout floats the photo at the top of <article>, which starts below
+// the <header> holding the name and subtitle, so the photo sits noticeably lower
+// than the heading. Pull it up alongside the name. Only from the breakpoint where
+// the photo actually sits beside the text; narrower than that it stacks, and a
+// negative margin would drag it under the navbar.
+
+@media (min-width: 768px) {
+  .profile.float-right,
+  .profile.float-left {
+    margin-top: -6.5rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Research page figure
+// -----------------------------------------------------------------------------
+// assets/js/research-figure.js redraws assets/img/research-overview.png on two
+// canvases: `rfig-base` holds the cleaned figure and its labels, `rfig-fx` the
+// animation. The <img> stays underneath as the fallback if they cannot draw.
+
+.rfig {
+  margin: 1.5rem 0 0;
+}
+
+.home-research {
+  clear: both;
+  padding-top: 1.5rem;
+}
+
+// -----------------------------------------------------------------------------
+// About: featured project (Materealize)
+// -----------------------------------------------------------------------------
+// Overview figure full width, then the two modes side by side, then the debate
+// animation beside the text that explains it. Everything stacks below 768px.
+
+.feature {
+  clear: both;
+  margin-top: 3rem;
+  margin-bottom: 5rem; // room before the News heading that follows
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+}
+
+.feature-eyebrow {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+
+// Project name stays bold; the description after it reads as a subtitle.
+.feature-tagline {
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.feature-lede {
+  max-width: 48rem;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.feature-figure {
+  margin: 1.75rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+    text-align: center;
+  }
+}
+
+.feature-modes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feature-mode {
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0.4rem;
+  background-color: var(--global-card-bg-color);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--global-text-color-light);
+  }
+}
+
+.feature-time {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+  vertical-align: middle;
+}
+
+.feature-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .feature-figure {
+    margin: 0;
+    max-width: 26rem;
+    justify-self: center;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}
+
+.feature-agents {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.feature-links {
+  margin: 0;
+
+  a {
+    font-weight: 500;
+  }
+
+  i {
+    margin-left: 0.2rem;
+    font-size: 0.75em;
+  }
+}
+
+.rfig-stage {
+  position: relative;
+  aspect-ratio: 1672 / 941;
+  background: #fdfdfd;
+
+  > img,
+  > canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+  }
+
+  > img {
+    user-select: none;
+    visibility: hidden;
+  }
+
+  .rfig-fx {
+    pointer-events: none;
+  }
+}
+
+.rfig.is-loading .rfig-stage > img,
+.rfig.is-loading .rfig-stage > canvas,
+.rfig.is-live .rfig-stage > img {
+  visibility: hidden;
+}
+
+.rfig.is-fallback .rfig-stage > img {
+  visibility: visible;
+}
+
+.rfig-hot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 1rem;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px dashed var(--global-text-color);
+    outline-offset: 2px;
+  }
+
+  &.is-circle {
+    border-radius: 50%;
+  }
+
+  &.is-key {
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+.rfig-explain {
+  --c: #c23f2c;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.5rem 1.5rem;
+  align-items: start;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.rfig-eyebrow {
+  margin: 0;
+  color: var(--c);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.rfig-text {
+  margin: 0.3rem 0 0;
+  color: var(--global-text-color);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  height: 4.65em;
+  overflow-y: auto;
+  scrollbar-width: thin;
+
+  a,
+  .rfig-tag {
+    margin-left: 0.25rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  a {
+    color: var(--c);
+
+    em {
+      color: inherit;
+    }
+  }
+
+  .rfig-tag {
+    color: var(--global-text-color-light);
+  }
+}
+
+.rfig-tour {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding-top: 0.1rem;
+}
+
+.rfig-dot {
+  position: relative;
+  overflow: hidden;
+  width: 0.55rem;
+  height: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 1rem;
+  background: #dcdfe7;
+  cursor: pointer;
+  transition: width 0.25s ease;
+
+  &[aria-current="step"] {
+    width: 1.9rem;
+    background: color-mix(in srgb, var(--c) 22%, #fff);
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--c);
+      transform: scaleX(var(--p, 0));
+      transform-origin: left center;
+    }
+  }
+}
+
+.rfig-play {
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2rem;
+  background: none;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rfig-dot {
+    transition: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Research page
+// -----------------------------------------------------------------------------
+// Icon cards that stay quiet until pointed at. The description is always in the
+// DOM so it is readable by search engines and screen readers; only its height is
+// animated, via the 0fr/1fr grid-row trick, which avoids guessing a max-height.
+
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.research-card {
+  // Each card carries its icon's hue as --accent (set inline in projects.md).
+  --accent: var(--global-theme-color);
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.4rem;
+  background-color: var(--global-card-bg-color);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+  cursor: default;
+
+  // Colour tiles drawn from the research figure's glyphs, inline in the page.
+  .research-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  h3 {
+    margin: 0.75rem 0 0;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  // Collapsed by default. The text is wrapped in a span on purpose: a grid
+  // container turns every child into a grid item, so bare text plus inline
+  // <sub>/<sup> would each land on their own row, and the 0fr track needs a real
+  // element to clamp with `min-height: 0`.
+  p {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+    opacity: 0;
+    transition:
+      grid-template-rows 0.25s ease,
+      opacity 0.2s ease,
+      margin-top 0.25s ease;
+
+    > span {
+      min-height: 0;
+    }
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:focus-within {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+
+    p {
+      grid-template-rows: 1fr;
+      margin-top: 0.6rem;
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+// Nothing to hover with on a touch screen, so show every description outright.
+@media (hover: none) {
+  .research-card p {
+    grid-template-rows: 1fr;
+    margin-top: 0.6rem;
+    opacity: 1;
+  }
+}
+
+// Respect a reduced-motion preference: reveal without animating.
+@media (prefers-reduced-motion: reduce) {
+  .research-card,
+  .research-card p {
+    transition: none;
+  }
+}
+
+.research-footnote {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+// -----------------------------------------------------------------------------
+// Tools page
+// -----------------------------------------------------------------------------
+
+body > footer {
+  display: none !important;
+}
+
+// With the footer hidden, every page's content ran straight into the bottom edge
+// of the window. Give the main column the breathing room the footer used to.
+body > .container.mt-5 {
+  padding-bottom: 8rem;
+}
+
+body:has(.tool-showcase) {
+  > .container.mt-5 {
+    margin-top: 1.5rem !important;
+  }
+  .post-header {
+    margin-bottom: 0.75rem;
+  }
+  .post-description:empty {
+    display: none;
+  }
+}
+
+.tool-showcase {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 0 1.25rem;
+
+  & + & {
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.25rem;
+  }
+  > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-height: 25vh;
+    object-fit: contain;
+    object-position: left center;
+  }
+  h2 {
+    margin: 0 0 0.65rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  p {
+    margin: 0;
+    line-height: 1.65;
+  }
+  .tool-action:not(.primary) {
+    border-color: transparent;
+    color: var(--global-theme-color);
+    font-weight: 400;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    > img {
+      max-height: none;
+    }
+  }
+}
+
+.tool-feature {
+  margin: 0 0 2rem;
+  padding: 1.65rem 1.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 0.3rem solid var(--global-theme-color);
+  border-radius: 0.4rem;
+
+  .tool-kicker {
+    margin: 0 0 0.35rem;
+    color: var(--global-theme-color);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    line-height: 1.05;
+  }
+
+  .tool-feature-title {
+    max-width: 44rem;
+    margin: 0.65rem 0 0.55rem;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  .tool-feature-meta {
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+  }
+}
+
+.tool-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
+
+  .tool-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    min-height: 2.45rem;
+    padding: 0.52rem 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.3rem;
+    color: var(--global-text-color);
+    font-size: 0.84rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+
+    &.primary {
+      border-color: var(--global-theme-color);
+      background: var(--global-theme-color);
+      color: #fff;
+    }
+
+    &.primary:hover,
+    &.primary:focus-visible {
+      filter: brightness(0.92);
+    }
+  }
+}
+
+// Cards, to match the research page. Deliberately without the hover-to-reveal
+// used there: these descriptions are what a visitor reads to choose which solver
+// to open, so hiding them would mean pointing at each in turn to compare three
+// one-sentence blurbs, and on a touch screen the hover never fires at all.
+.tool-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // The whole card is the anchor, not just the title, so the click target is
+  // the box a visitor is already pointing at.
+  .tool {
+    display: block;
+    padding: 1.25rem 1.1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.4rem;
+    text-decoration: none;
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--global-theme-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+
+    // Tool icons. One is 144x146 rather than square, so the box
+    // is squared off here and the artwork centred inside it with `contain`;
+    // left to their intrinsic sizes the three would sit a pixel out of line.
+    img {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-bottom: 0.75rem;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      color: var(--global-theme-color);
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Highlights page
+// -----------------------------------------------------------------------------
+// Two items of very different aspect ratio (a portrait journal cover and a
+// landscape press photo), so give each column its own track and let the images
+// size themselves rather than forcing a shared height. Deliberately not built
+// on `.row`/`.col-*`: those Bootstrap classes are only half-present without the
+// compat layer, which is what broke the CV page.
+
+// Captions sit directly under their image, so a following section heading needs
+// its own breathing room or it reads as part of the last caption.
+h2 + .highlights-grid {
+  margin-top: 1.5rem;
+}
+
+.highlights-grid + h2,
+.news + h2 {
+  margin-top: 3.5rem;
+}
+
+#news,
+#journal-covers,
+#photos {
+  margin-bottom: 1.5rem;
+}
+
+.news:has(+ #journal-covers),
+.news:has(+ #journal-covers) table,
+.highlights-grid {
+  margin-bottom: 0;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+    max-height: 24rem;
+    height: auto;
+  }
+}
+
+// Portrait covers of near-identical ratio, side by side from 640px up. Each
+// column is held to 14rem (about 224px) so a cover reads as a thumbnail; click
+// to enlarge (medium-zoom). On a phone they still sit two across at half width.
+.highlights-grid.covers {
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 14rem));
+
+  img {
+    width: 100%;
+    max-height: none;
+  }
+
+  // A bare figcaption has no top margin of its own, so without this the caption
+  // sits flush against the bottom edge of the cover.
+  figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+}
+
+// One landscape photo, so hold it to half width rather than letting it stretch.
+.highlights-grid.photos {
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+
+    strong {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+@import "cv-document";

@@ -1,0 +1,29 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
+
+# Private source files kept locally only: the CV PDF and full-size originals of
+# images whose web-sized copies are committed. Do not publish these.
+*.pdf
+assets/img/Seongmin Kim - graduation photo.JPEG
+assets/img/2025_JACS_coverimg.jpeg
+assets/img/2026_DD_coverimg.gif
+assets/img/materealize_overview.gif

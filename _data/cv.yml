@@ -1,0 +1,116 @@
+cv:
+  name: Seongmin Kim
+  label: Postdoctoral Researcher, Department of Chemistry, University of Toronto
+  email: smkim.micc@gmail.com
+  location: Sandford Fleming Building, 10 King's College Rd, Toronto, ON M5S 3G4, Canada
+  image: ""
+  summary: >
+    Machine learning and large language models for synthesizable inorganic materials design and synthesis planning,
+    agentic AI for autonomous materials chemistry, and self-driving labs.
+
+  # The CV contact block prints Location as "<city>, <region>" from this block and
+  # ignores `location` above, so the street address is split across the two keys.
+  address:
+    city: Sandford Fleming Building, 10 King's College Rd, Toronto
+    region: ON M5S 3G4, Canada
+
+  sections:
+    Experience:
+      - company: University of Toronto
+        position: Postdoctoral Researcher
+        location: Toronto, ON, Canada
+        start_date: 2026-03
+        end_date: Present
+        summary: "Advisor: Prof. Alán Aspuru-Guzik"
+
+      - company: University of Toronto
+        position: Visiting Scholar
+        location: Toronto, ON, Canada
+        start_date: 2025-11
+        end_date: 2025-12
+        summary: "Host: Prof. Alán Aspuru-Guzik"
+
+      - company: Seoul National University
+        position: Postdoctoral Researcher
+        location: Seoul, South Korea
+        start_date: 2025-03
+        end_date: 2026-02
+        summary: "Advisor: Prof. Yousung Jung"
+
+    Education:
+      - institution: Korea Advanced Institute of Science and Technology (KAIST)
+        location: Daejeon, South Korea
+        area: Chemical and Biomolecular Engineering
+        studyType: Ph.D.
+        start_date: 2021-03
+        end_date: 2025-02
+        highlights:
+          - "Research topic: AI for material synthesis&nbsp; (<em>Advisor: Prof. Yousung Jung</em>)"
+
+      - institution: Seoul National University
+        location: Seoul, South Korea
+        area: Chemical and Biological Engineering
+        studyType: M.S.
+        start_date: 2018-03
+        end_date: 2020-08
+        highlights:
+          - "Research topic: Lithium-ion battery&nbsp; (<em>Advisor: Prof. Kyu Tae Lee</em>)"
+
+      - institution: Pohang University of Science and Technology (POSTECH)
+        location: Pohang, South Korea
+        area: Chemical Engineering
+        studyType: B.S.
+        start_date: 2012-03
+        end_date: 2018-02
+
+    Research Interests:
+      - label: Synthesizable design
+        details: ML & LLM for synthesizable material design & synthesis planning.
+      - label: Agentic AI
+        details: Agentic AI for end-to-end autonomous material chemistry.
+      - label: Self-driving labs
+        details: Self-Driving Labs (SDLs) for accelerating material discovery.
+
+    Talks & Presentations:
+      - bullet: "**2026.06.** Canada-Korea Conference (CKC 2026), AKCSE, Canada. (Invited talk)"
+      - bullet: "**2026.02.** Department of Energy Engineering, KENTECH, Korea. (Invited talk)"
+      - bullet: "**2025.10.** AC-SNU Joint International Workshop, Korea. (Speaker)"
+      - bullet: "**2025.10.** Department of Chemistry, Seoul National University, Korea. (Invited talk)"
+      - bullet: "**2025.08.** Accelerate Conference, AC & University of Toronto, Canada. (Poster)"
+      - bullet: "**2024.07.** CECAM Workshop L2M3, EPFL, Switzerland. (Speaker)"
+      - bullet: "**2022.12.** NeurIPS Workshop AI4Mat, New Orleans, USA. (Spotlight talk)"
+
+    Awards:
+      - title: Samsung Science & Technology Foundation Grant
+        awarder: Samsung Science & Technology Foundation
+        date: 2025
+        summary: >
+          2025 – 2029. Total budget ₩1.6B (~$1.1M USD). Project: “Hierarchical Agentic AI for Objective-Driven Optimal
+          Electrolyte Design.” Role: Lead Proposal Writer (PI: Prof. Yousung Jung).
+
+      - title: National Scholarship for Ph.D. Program
+        awarder: KAIST
+        date: 2021
+        summary: 2021 – 2025
+
+      - title: Academic Excellence Special Scholarship
+        awarder: SNU Alumni Association
+        date: 2019
+
+      - title: Scholarship and Grant for SNU Graduate-Undergraduate Mentoring Program
+        awarder: Seoul National University
+        date: 2018
+
+      - title: Scholarship and Research Grant for Undergraduate Research Program
+        awarder: POSTECH
+        date: 2016
+
+    Teaching Experience:
+      - label: Guest Lecturer (2026 Spring)
+        details: "“Basic AI in Chemistry: Graph Neural Network”, Sungkyunkwan University"
+      - label: Teaching Assistant (2022 Spring)
+        details: "“Chemical and Biomolecular Engineering Laboratory”, KAIST"
+      - label: Teaching Assistant (2021 Fall)
+        details: "“Molecular Engineering Laboratory”, KAIST"
+      - label: Teaching Assistant (2019 Fall)
+        details: "“Electrochemistry”, Seoul National University"

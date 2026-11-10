@@ -1,0 +1,44 @@
+name: Check for broken links
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/prettier.yml"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/prettier.yml"
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    # only run on the main repo
+    if: github.repository == 'alshedivat/al-folio'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker 🔗
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          fail: true
+          # removed md files that include liquid tags
+          args: --user-agent 'curl/7.54' --max-retries 3 --retry-wait-time 2 --exclude-path _pages/404.md --exclude-path AGENTS.md --verbose --no-progress './**/*.md' './**/*.html'
