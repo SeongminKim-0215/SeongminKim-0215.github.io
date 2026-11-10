@@ -1,17 +1,28 @@
 {%- comment -%}
   Runs inside `_layouts/bib.liquid` (al_folio_core), between the point where
   `additional_info` is appended to `entrytype` and the point where `periodical`
-  is assembled.
+  is assembled. The layout then prints `{{ entrytype }}, {{ entryyear }}`.
 
-  The layout builds the venue line as `{{ entrytype }}, {{ year }}`, and pipes
-  `additional_info` through `markdownify`, which wraps its output in a paragraph
-  and ends it with a newline. The layout strips the `<p>` tags but not that
-  trailing newline, so the comma before the year landed after it and the line
-  rendered as "Chemical Society Reviews, in press , 2026" — a stray space ahead
-  of the comma on every entry carrying `additional_info`.
+  1. Strip `entrytype`. The layout pipes `additional_info` through
+     `markdownify`, which leaves a trailing newline, so the comma before the
+     year rendered with a stray space ahead of it ("… under review , 2026").
 
-  Stripping `entrytype` here puts the comma back against the word it follows.
-  Entries without `additional_info` have no trailing whitespace to begin with,
-  so this is a no-op for them.
+  2. Add volume, issue and pages, which the layout never prints. When an entry
+     has any of them, the year moves into `entrytype` and `entryyear` is
+     emptied, giving the ACS-style line
+       Journal of the American Chemical Society, 2025, 147(43), 39113–39122
+     Entries with none of them (preprints, under review) are left as they were.
 {%- endcomment -%}
 {%- assign entrytype = entrytype | strip -%}
+{%- if entry.volume or entry.number or entry.pages -%}
+  {%- capture citation_detail -%}
+    {%- if entry.volume -%}{{ entry.volume }}{%- endif -%}
+    {%- if entry.number -%}({{ entry.number }}){%- endif -%}
+    {%- if entry.pages -%}
+      {%- if entry.volume or entry.number -%}, {% endif -%}
+      {{- entry.pages | replace: '--', '–' -}}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- capture entrytype -%}{{ entrytype }}, {{ entry.year }}, {{ citation_detail }}{%- endcapture -%}
+  {%- assign entryyear = '' -%}
+{%- endif -%}
