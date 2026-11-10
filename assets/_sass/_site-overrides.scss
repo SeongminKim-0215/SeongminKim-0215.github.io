@@ -13,6 +13,14 @@
   --global-hover-color: #115e59; // darker teal, for hover states
 }
 
+// Dark mode. The theme sets its own accent under html[data-theme="dark"], which
+// outranks :root, so the teal has to be restated here. A lighter teal keeps the
+// links readable on the dark background.
+html[data-theme="dark"] {
+  --global-theme-color: #2dd4bf;
+  --global-hover-color: #5eead4;
+}
+
 body,
 h1,
 h2,
@@ -161,6 +169,16 @@ textarea,
 // The theme draws the year headings at 10% black, which all but disappears.
 .publications h2.bibliography {
   color: #6b6b6b;
+}
+
+html[data-theme="dark"] .publications h2.bibliography {
+  color: #a3a3a3;
+}
+
+// White text on the light dark-mode teal has too little contrast; use near-black.
+html[data-theme="dark"] .pub-filter button.is-active,
+html[data-theme="dark"] .tool-action.primary {
+  color: #062a26;
 }
 
 // The "Under review & in preparation" heading sits outside `.publications`, so
