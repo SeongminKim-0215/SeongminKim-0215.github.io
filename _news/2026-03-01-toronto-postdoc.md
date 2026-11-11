@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the **University of Toronto** as a postdoctoral researcher with Prof. Alán Aspuru-Guzik.
+Joined the **University of Toronto** as a postdoctoral researcher with Prof. Alán Aspuru-Guzik and Prof. Varinia Bernales.

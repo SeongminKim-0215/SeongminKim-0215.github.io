@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I develop machine learning and large language model methods for designing synthesizable inorganic materials and planning how to make them. I am a postdoctoral researcher in [The Matter Lab](https://www.matter.toronto.edu/) at the University of Toronto, led by [Prof. Alán Aspuru-Guzik](https://scholar.google.com/citations?user=Ag_6KEgAAAAJ).
+I develop machine learning and large language model methods for designing synthesizable inorganic materials and planning how to make them. I am a postdoctoral researcher in [The Matter Lab](https://www.matter.toronto.edu/) at the University of Toronto, co-advised by [Prof. Alán Aspuru-Guzik](https://scholar.google.com/citations?user=Ag_6KEgAAAAJ) and [Prof. Varinia Bernales](https://scholar.google.com/citations?user=IFE_CGgAAAAJ).
 
 I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working on AI for material synthesis with [Prof. Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ), and continued as a postdoc in his group at Seoul National University. Before that, I studied lithium-ion battery materials for my M.S. at Seoul National University with [Prof. Kyu Tae Lee](https://scholar.google.com/citations?user=L1aEb58AAAAJ), and received my B.S. in Chemical Engineering from POSTECH.
 
