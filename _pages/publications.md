@@ -16,17 +16,11 @@ nav_order: 1
   <button type="button" data-filter="co" aria-pressed="false">Co-authorship</button>
 </div>
 
+<!-- One list for everything. Under-review papers (@unpublished) sit first in
+     papers.bib, so they lead their year; within a year, file order is page order. -->
 <div class="publications" id="published">
 
-{% bibliography --query @article %}
-
-</div>
-
-<h2 id="under-review">Under review</h2>
-
-<div class="publications">
-
-{% bibliography --query @unpublished %}
+{% bibliography --query @* %}
 
 </div>
 
