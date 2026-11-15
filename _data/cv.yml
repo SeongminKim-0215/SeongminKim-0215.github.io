@@ -23,13 +23,6 @@ cv:
         end_date: Present
         summary: "Chemistry<br>Advisors: Prof. Alán Aspuru-Guzik and Prof. Varinia Bernales"
 
-      - company: University of Toronto
-        position: Visiting Scholar
-        location: Toronto, ON, Canada
-        start_date: 2025-11
-        end_date: 2025-12
-        summary: "Chemistry<br>Host: Prof. Alán Aspuru-Guzik"
-
       - company: Seoul National University
         position: Postdoctoral Researcher
         location: Seoul, South Korea
