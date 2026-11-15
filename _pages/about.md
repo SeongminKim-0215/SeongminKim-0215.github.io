@@ -42,17 +42,7 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
 
   <figure class="feature-figure">
     <img
-      class="theme-light-only"
       src="{{ '/assets/img/materealize_steps.gif' | relative_url }}"
-      width="2460"
-      height="1008"
-      loading="lazy"
-      decoding="async"
-      alt="A user asks to design new inorganic materials with a bandgap around 1.34 eV. Materealize answers in four steps: material generation, property evaluation, synthesizability evaluation, and synthesis planning."
-    >
-    <img
-      class="theme-dark-only"
-      src="{{ '/assets/img/materealize_steps_dark.gif' | relative_url }}"
       width="2460"
       height="1008"
       loading="lazy"
@@ -82,17 +72,7 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
   <div class="feature-split">
     <figure class="feature-figure">
       <img
-        class="theme-light-only"
         src="{{ '/assets/img/multi_agent_debate.gif' | relative_url }}"
-        width="892"
-        height="908"
-        loading="lazy"
-        decoding="async"
-        alt="Animation of four specialist agents taking turns in a multi-agent debate, with a judge agent receiving the outcome."
-      >
-      <img
-        class="theme-dark-only"
-        src="{{ '/assets/img/multi_agent_debate_dark.gif' | relative_url }}"
         width="892"
         height="908"
         loading="lazy"

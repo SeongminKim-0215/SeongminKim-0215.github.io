@@ -310,14 +310,6 @@ html[data-theme="dark"] .tool-action.primary {
     background: #fff;
   }
 
-  // Each GIF has a *_dark.gif twin whose white background is swapped for grey
-  // (everything else untouched). Only the one matching the site theme is
-  // displayed (and, being lazy, only that one is downloaded).
-  img.theme-dark-only {
-    display: none;
-    background: #a6a6ab; // the dark GIFs' own background grey
-  }
-
   figcaption {
     margin-top: 0.6rem;
     font-size: 0.8rem;
@@ -327,15 +319,6 @@ html[data-theme="dark"] .tool-action.primary {
   }
 }
 
-html[data-theme="dark"] .feature-figure {
-  img.theme-light-only {
-    display: none;
-  }
-
-  img.theme-dark-only {
-    display: block;
-  }
-}
 
 .feature-modes {
   display: grid;
