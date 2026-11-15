@@ -1,11 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <defs>
-    <radialGradient id="ball" cx="0.36" cy="0.32" r="0.72">
-      <stop offset="0" stop-color="#8fe3d9" />
-      <stop offset="0.35" stop-color="#3cbcb2" />
-      <stop offset="0.75" stop-color="#239f98" />
-      <stop offset="1" stop-color="#15736d" />
-    </radialGradient>
-  </defs>
-  <circle cx="90" cy="90" r="82" fill="url(#ball)" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Lattice spark: a 3x3 atom lattice where one site has become an AI spark. -->
+  <style>
+    .atom { fill: #0f766e; }
+    @media (prefers-color-scheme: dark) { .atom { fill: #2dd4bf; } }
+  </style>
+  <g class="atom">
+    <circle cx="12" cy="12" r="5.5" />
+    <circle cx="32" cy="12" r="5.5" />
+    <circle cx="12" cy="32" r="5.5" />
+    <circle cx="32" cy="32" r="5.5" />
+    <circle cx="52" cy="32" r="5.5" />
+    <circle cx="12" cy="52" r="5.5" />
+    <circle cx="32" cy="52" r="5.5" />
+    <circle cx="52" cy="52" r="5.5" />
+  </g>
+  <path d="M52 2c1.6 6.6 3.4 8.4 10 10-6.6 1.6-8.4 3.4-10 10-1.6-6.6-3.4-8.4-10-10 6.6-1.6 8.4-3.4 10-10Z" fill="#f59e0b" />
 </svg>
