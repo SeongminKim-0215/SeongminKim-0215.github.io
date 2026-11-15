@@ -37,24 +37,27 @@ cv:
         end_date: 2026-02
         summary: "Advisor: Prof. Yousung Jung"
 
+    # The education template has no `summary` field, so the advisor rides on a
+    # second line of `area`. Both lines render as the same italic note that
+    # Experience uses for its "Advisor:" line.
     Education:
       - institution: Korea Advanced Institute of Science and Technology (KAIST)
         location: Daejeon, South Korea
-        area: Chemical and Biomolecular Engineering
+        area: "Chemical and Biomolecular Engineering<br>Advisor: Prof. Yousung Jung"
         studyType: Ph.D.
         start_date: 2021-03
         end_date: 2025-02
         highlights:
-          - "Research topic: AI for material synthesis&nbsp; (<em>Advisor: Prof. Yousung Jung</em>)"
+          - "Research topic: AI for material synthesis"
 
       - institution: Seoul National University
         location: Seoul, South Korea
-        area: Chemical and Biological Engineering
+        area: "Chemical and Biological Engineering<br>Advisor: Prof. Kyu Tae Lee"
         studyType: M.S.
         start_date: 2018-03
         end_date: 2020-08
         highlights:
-          - "Research topic: Lithium-ion battery&nbsp; (<em>Advisor: Prof. Kyu Tae Lee</em>)"
+          - "Research topic: Lithium-ion battery"
 
       - institution: Pohang University of Science and Technology (POSTECH)
         location: Pohang, South Korea
