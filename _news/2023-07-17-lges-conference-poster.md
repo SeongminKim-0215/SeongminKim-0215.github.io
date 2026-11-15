@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented a poster at the **1st LG Energy Solution Industry-Academia Collaboration Conference**, Daejeon, Korea.
+Presented a poster at the **LG Energy Solution Industry-Academia Collaboration Conference**, Daejeon, Korea.
