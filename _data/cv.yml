@@ -86,8 +86,7 @@ cv:
     Awards:
       - title: National Scholarship for Ph.D. Program
         awarder: KAIST
-        date: 2021
-        summary: 2021 – 2025
+        date: "2021 – 2025" # en dash on purpose: the awards template cuts the date at the first ASCII hyphen
 
       - title: Academic Excellence Special Scholarship
         awarder: SNU Alumni Association
