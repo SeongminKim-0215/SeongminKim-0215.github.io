@@ -78,8 +78,9 @@ textarea,
 
 // Google Scholar comes from the Academicons font, whose glyph looks out of place
 // next to the Font Awesome ones. Draw Font Awesome's graduation cap (f19d) in
-// its place so the row reads as one set.
-.social .contact-icons a[href*="scholar.google"] i.ai::before {
+// its place so the row reads as one set. (A class selector on purpose: the
+// deploy's PurgeCSS step dropped an a[href*=...] version of this rule.)
+.social .contact-icons i.ai-google-scholar::before {
   font-family: "Font Awesome 7 Free";
   font-weight: 900;
   content: "\f19d";
