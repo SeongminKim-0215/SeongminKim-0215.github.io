@@ -21,21 +21,21 @@ cv:
         location: Toronto, ON, Canada
         start_date: 2026-03
         end_date: Present
-        summary: "Advisors: Prof. Alán Aspuru-Guzik and Prof. Varinia Bernales"
+        summary: "Chemistry<br>Advisors: Prof. Alán Aspuru-Guzik and Prof. Varinia Bernales"
 
       - company: University of Toronto
         position: Visiting Scholar
         location: Toronto, ON, Canada
         start_date: 2025-11
         end_date: 2025-12
-        summary: "Host: Prof. Alán Aspuru-Guzik"
+        summary: "Chemistry<br>Host: Prof. Alán Aspuru-Guzik"
 
       - company: Seoul National University
         position: Postdoctoral Researcher
         location: Seoul, South Korea
         start_date: 2025-03
         end_date: 2026-02
-        summary: "Advisor: Prof. Yousung Jung"
+        summary: "Chemical and Biological Engineering<br>Advisor: Prof. Yousung Jung"
 
     # The education template has no `summary` field, so the advisor rides on a
     # second line of `area`. Both lines render as the same italic note that
