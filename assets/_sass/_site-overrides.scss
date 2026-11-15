@@ -310,11 +310,12 @@ html[data-theme="dark"] .tool-action.primary {
     background: #fff;
   }
 
-  // Each GIF has a recoloured *_dark.gif twin. Only the one matching the site
-  // theme is displayed (and, being lazy, only that one is downloaded).
+  // Each GIF has a *_dark.gif twin whose white background is swapped for grey
+  // (everything else untouched). Only the one matching the site theme is
+  // displayed (and, being lazy, only that one is downloaded).
   img.theme-dark-only {
     display: none;
-    background: #1e1e20; // the dark GIFs' own canvas colour
+    background: #a6a6ab; // the dark GIFs' own background grey
   }
 
   figcaption {
