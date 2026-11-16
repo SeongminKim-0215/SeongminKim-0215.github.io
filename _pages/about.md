@@ -56,14 +56,14 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
     <div class="feature-mode">
       <h3>Instant mode <span class="feature-time">~2 min</span></h3>
       <p>
-        Conditional generation, synthesizability prediction and synthesis planning in one pass: precursors, heating temperature, an explanation of
+        Conditional generation, synthesizability prediction, and synthesis planning in one pass: precursors, heating temperature, an explanation of
         the prediction, and a redesigned structure when a candidate is not synthesizable.
       </p>
     </div>
     <div class="feature-mode">
       <h3>Thinking mode <span class="feature-time">~30 min</span></h3>
       <p>
-        A selected candidate goes to a multi-agent debate. Specialist agents argue the synthesis route with their own ML tools, and a judge agent
+        A selected candidate goes to a multi-agent debate. Specialist agents argue over the synthesis route with their own ML tools, and a judge agent
         writes the final synthesis report.
       </p>
     </div>
@@ -79,7 +79,7 @@ I received my Ph.D. in Chemical and Biomolecular Engineering from KAIST, working
         decoding="async"
         alt="Animation of four specialist agents taking turns in a multi-agent debate, with a judge agent receiving the outcome."
       >
-      <figcaption>Four agents debate; a judge agent finalizes the outcomes.</figcaption>
+      <figcaption>Four agents debate; a judge agent finalizes the outcome.</figcaption>
     </figure>
     <div class="feature-split-text">
       <h3>Multi-agent debate</h3>

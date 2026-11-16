@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting scholar at the **University of Toronto**, hosted by Prof. Alán Aspuru-Guzik.
+Visited the **University of Toronto** as a visiting scholar, hosted by Prof. Alán Aspuru-Guzik.

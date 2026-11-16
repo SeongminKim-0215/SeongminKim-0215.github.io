@@ -139,7 +139,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: notes # blog_name will be displayed in your blog page
-blog_description: notes on catalysis, reactors, and process electrification
+blog_description: notes on AI for materials and chemistry
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

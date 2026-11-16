@@ -61,11 +61,11 @@ cv:
 
     Research Interests:
       - label: Synthesizable design
-        details: ML & LLM for synthesizable material design & synthesis planning.
+        details: ML & LLM for synthesizable materials design & synthesis planning.
       - label: Agentic AI
-        details: Agentic AI for end-to-end autonomous material chemistry.
+        details: Agentic AI for end-to-end autonomous materials chemistry.
       - label: Self-driving labs
-        details: Self-Driving Labs (SDLs) for accelerating material discovery.
+        details: Self-Driving Labs (SDLs) for accelerating materials discovery.
 
     Talks & Presentations:
       - bullet: "**2026.06.** Canada-Korea Conference (CKC 2026), AKCSE, Canada. (Invited talk)"
