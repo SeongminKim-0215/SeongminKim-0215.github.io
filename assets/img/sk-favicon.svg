@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Lattice spark: a 3x3 atom lattice where one site has become an AI spark. -->
+  <style>
+    .atom { fill: #0f766e; }
+    @media (prefers-color-scheme: dark) { .atom { fill: #2dd4bf; } }
+  </style>
+  <g class="atom">
+    <circle cx="12" cy="12" r="5.5" />
+    <circle cx="32" cy="12" r="5.5" />
+    <circle cx="12" cy="32" r="5.5" />
+    <circle cx="32" cy="32" r="5.5" />
+    <circle cx="52" cy="32" r="5.5" />
+    <circle cx="12" cy="52" r="5.5" />
+    <circle cx="32" cy="52" r="5.5" />
+    <circle cx="52" cy="52" r="5.5" />
+  </g>
+  <path d="M52 2c1.6 6.6 3.4 8.4 10 10-6.6 1.6-8.4 3.4-10 10-1.6-6.6-3.4-8.4-10-10 6.6-1.6 8.4-3.4 10-10Z" fill="#f59e0b" />
+</svg>
