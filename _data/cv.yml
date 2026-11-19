@@ -1,7 +1,7 @@
 cv:
   name: Seongmin Kim
   label: Postdoctoral Researcher, Department of Chemistry, University of Toronto
-  email: seongmin.kim@utoronto.ca
+  email: "seongmin.kim[at]utoronto.ca" # written out by hand so the address never appears in the CV markup
   location: Sandford Fleming Building, 10 King's College Rd, Toronto, ON M5S 3G4, Canada
   image: ""
   summary: >
